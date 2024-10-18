@@ -12,3 +12,12 @@ p {
     background-color: rgb(2, 13, 175);
 
 }
+
+div#box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    border: 3px solid black;
+    border-radius: 20px;
+    position: absolute;
+}
