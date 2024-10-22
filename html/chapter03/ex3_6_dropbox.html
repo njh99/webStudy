@@ -6,9 +6,9 @@
     <title>DROPBOX</title>
 </head>
 <body>
-    <form action="#">
+    <form action="#" method="post">
         <label for="ani">키우고 싶은 동물은
-            <input type="text" name="animal" id="animal" list="animal">
+            <input type="text" name="ani" id="animal" list="animal">
             <datalist id="animal">
                 <option value="강아지">강아지</option>
                 <option value="고양이">고양이</option>
@@ -16,6 +16,20 @@
                 <option value="오리">오리</option>
             </datalist>
         </label>
+        <button type="submit">서버전송</button>
+        <button type="reset">전송취소</button>
+       
+       
+        <label for="ani2">키우고 싶은 동물은
+            <select type="text" name="animal" id="animal" list="animal">
+            <datalist id="animal">
+                <option value="강아지">강아지</option>
+                <option value="고양이">고양이</option>
+                <option value="도마뱀">도마뱀</option>
+                <option value="오리">오리</option>
+            </datalist>
+            </select>
+            <br>
         <button type="submit">서버전송</button>
         <button type="reset">전송취소</button>
     </form>
