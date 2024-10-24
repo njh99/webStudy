@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6498553759.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+         font-family:sans-serif;   
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            width: 80%;
+            margin: 0 auto;
+            padding: 8px;
+            background-color: azure;
+            border: 1px dotted black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content:space-between;
+            align-items: center;
+        }
+        div.nav_logo:hover{
+           background-color: aquamarine;
+        }
+        div.nav_logo{
+            font-size: 24px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+        }
+        div.nav_logo i{
+            color: rgb(167, 202, 236);
+            font-size: 32px;
+            margin: 5px;
+        }
+        ul.nav_menu{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.nav_menu a{
+            padding: 8px 15px;
+        }
+        ul.nav_menu a:hover{
+            background-color: aquamarine;
+        }
+
+        ul.nav_icons{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.nav_icons i.futbol{
+            color: aqua;
+        }
+        ul.nav_icons i.insta{
+            color: rgb(37, 18, 95);
+        }
+        ul.nav_icons a{
+            font-size: 20px;
+            padding: 8px;
+        }
+        ul.nav_icons a:hover{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_logo">
+            <a href="#"><i class="fa-solid fa-snowflake"></i></a>
+            <a href="#">WEB CORDING</a>
+
+        </div>
+        <ul class="nav_menu">
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+            <li><a href="#">메뉴5</a></li>
+        </ul>
+
+        <ul class="nav_icons">
+            <li><a href="#"><i class="fa-solid fa-futbol futbol" ></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram insta"></i></a></li>
+           
+        </ul>
+    </nav>
+    
+</body>
+</html>
