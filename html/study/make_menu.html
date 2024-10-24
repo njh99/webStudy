@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/6498553759.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: "Jua", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        nav{
+            width: 80%;
+            margin: 0 auto;
+            padding: 5px;
+            background-color: rgb(95, 95, 95);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-content: center;
+        }
+        div.nav_futlogo{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 32px;
+            
+        }
+        div.nav_futlogo i{
+            color: white;
+            font-size: 32px;
+            margin: 5px;
+        }
+        div.nav_futlogo a:hover{
+            color: black;
+        }
+        ul.nav_menu{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+        }
+        ul.nav_menu li{
+            padding: 10px 10px;
+            
+        }
+        ul.nav_menu li a i{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.nav_menu li a:hover{
+            color: black;
+        }
+        ul.nav_icon{
+            list-style-type: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        ul.nav_icon a{
+            font-size: 24px;
+            padding: 10px;
+            
+        }
+        ul.nav_icon a:hover{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_futlogo">
+            <a href="#"><i class="fa-solid fa-futbol"></i></a>
+            <a href="#">FUTSAL</a>
+        </div>
+
+        <ul class="nav_menu">
+            <li><a href="#"><i class="fa-brands fa-earlybirds"></i><span>얼리버드</span></a></li>
+            <li><a href="#"><i class="fa-solid fa-person-dress"></i><span>여성풋살매칭</span></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-baby"></i><span>초보자</span></a></li>
+            <li><a href="#"><i class="fa-regular fa-user"></i><span>게스트</span></a></li>
+        </ul>
+
+        <ul class="nav_icon">
+            <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-question"></i></a></li>
+            <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
