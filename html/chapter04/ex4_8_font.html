@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/6498553759.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kablammo&display=swap" rel="stylesheet">
     <style>
         *{
             box-sizing: border-box;
@@ -12,8 +15,12 @@
             padding: 0;
         }
         body{
-         font-family:sans-serif;   
+         font-family:sans-serif; 
+         
         }
+
+
+
         a{
             text-decoration: none;
         }
@@ -33,10 +40,16 @@
            background-color: aquamarine;
         }
         div.nav_logo{
-            font-size: 24px;
-            font-weight: 700;
             display: flex;
             align-items: center;
+            
+            font-family:"Kablammo", system-ui; 
+            font-optical-sizing: auto;
+            font-size: 24px;
+            font-weight: 700;
+            font-style: normal;
+            font-variation-settings:
+        "MORF" 0;  
         }
         div.nav_logo i{
             color: rgb(167, 202, 236);
@@ -50,9 +63,11 @@
             flex-wrap: nowrap;
             justify-content: center;
             align-items: center;
+            
         }
         ul.nav_menu a{
             padding: 8px 15px;
+            border-radius: 10%
         }
         ul.nav_menu a:hover{
             background-color: aquamarine;
@@ -67,6 +82,7 @@
             align-items: center;
         }
         ul.nav_icons i.futbol{
+           
             color: aqua;
         }
         ul.nav_icons i.insta{
@@ -75,6 +91,7 @@
         ul.nav_icons a{
             font-size: 20px;
             padding: 8px;
+            border-radius: 50%;
         }
         ul.nav_icons a:hover{
             background-color: aquamarine;
