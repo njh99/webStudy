@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let member = prompt("관객 수 입력 바람");
+        let colNum = prompt("가로 한줄에 몇명씩 앉습니까?");
+        let rowNum;
+        if(member % colNum ===0){
+            rowNum = parseInt(member/colNum);
+        }else{
+            rowNum = parseInt(member/colNum)+1;
+        }
+         
+        document.write("<table>");
+        for(let i=1;i<rowNum;i++){
+            document.write("<tr>");
+                for(let j=1;j<=colNum;j++){
+                    seatNo = i * colNum + j;
+                    if(seatNo > member)
+                        break;
+                        document.write("<td>좌석"+seatNo+"</td>");
+                    
+                    }
+                    document.write("</tr>");
+            }
+            document.write("</table>");
+    </script>
+    <style>
+        table,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
