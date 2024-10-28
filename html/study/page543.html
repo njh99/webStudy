@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeColor(changeName){
+            let buttonArray = window.document.getElementsByTagName("body");
+            buttonArray[0].style.backgroundColor = changeName;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="changeColor('red')">red</button>
+    <button type="button"onclick="changeColor('green')">green</button>
+    <button type="button"onclick="changeColor('blue')">blue</button>
+  
+
+</body>
+</html>

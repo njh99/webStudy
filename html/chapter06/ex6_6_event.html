@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function radomFood(){
+            //객체를 가져온다
+           let priceobj =  window.document.getElementById("price")
+            //금액입력 1200원 미만이면 경고창
+           let price = window.parseInt(priceobj.value);
+           if(price<1200){
+            let no = Math.floor(math.radomFood()*(3-1+1)+1);
+            window.alert(`${price} 가격으로는 주문 불가능합니다.`);
+            return;
+           }
+
+           //금액입력 1200원 이상이면 1200원 음식을 몇개 줄 수 있는 파악한다.
+           let count = Math.floor(price / 1200);
+           let total = count * 1200;
+           let change = price - total;
+           //갯수만큼 음식이미지를 보여준다.
+           for(let i=0;i<count;i++){
+                document.write(`${i+1}번음식: <img src="./media/food${no}.png" width="200px">`);
+           }
+           document.write("hr");
+           document.write(`<p>총액: ${total} 잔액: ${change} </p>`);
+           window.console.log("price",price);
+            //총액과 잔액계산해서 보여준다.
+        }
+    </script>
+</head>
+<body>
+    <form action="#" method="get">
+        <p>음식 1개당 1200원입니다. 주문하고 싶은 금액을 입력하세요</p>
+        <label for="price">지불할 금액</label>
+        <input type="number" name="price" id="price" max="100000" min="1000">
+        <button type="button" onclick="radomFood();">order</button>
+        
+    </form>
+</body>
+</html>
