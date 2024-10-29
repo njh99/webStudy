@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+body{
+    /*폰트 사이즈, 구글폰트, 글자간격, 배경색*/
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+/*메뉴 css*/
+ul{
+    border: 1px dotted black;
+    list-style: none;
+    background-color: rgb(146, 230, 247);
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+ul>li:hover{
+    background-color: aqua;
+}
+ul> li> a{
+    display: inline-block;
+    width: 100px;
+    padding: 14px 16px;
+    font-size: x-large;
+    text-align: center;
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 150px;
+    z-index: 1;   
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;; 
+}
+
+div.dropdown-content a{
+    display: block;
+    padding: 14px 16px;
+}
+div.dropdown-content a:hover{
+    background-color: aquamarine;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+div.head{
+    width: 1200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin: 0px auto;
+}
