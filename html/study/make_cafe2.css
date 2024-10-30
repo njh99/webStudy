@@ -1,0 +1,127 @@
+
+header>nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: rgb(228, 244, 255);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    }
+    header>nav a{
+    text-decoration: none;
+    color: rgb(123, 196, 149);
+    }
+    nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px
+    }
+    nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+    nav > ul li{
+        list-style: none;
+    }
+    .dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(95, 95, 95);
+    min-width: 150px;
+    z-index: 1;   
+
+}
+img{
+    width: 50%;
+    height: 100%;
+}
+header section{
+   
+}
+div.dropdown-content a{
+    display: block;
+    padding: 14px 16px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+div.slideshow{
+    background-color: white;
+    height: 465px;
+    min-width: 960px;
+    position: relative;
+   
+    
+}
+div.slideshow_slides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div.slideshow_slides a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+div.slideshow_nav a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 62px;
+    transform: translateY(-50%);
+    opacity: 50%;
+}
+div.slideshow_nav a.prev{
+   
+    color: blue;
+    margin-left: -462px;
+    
+}
+div.slideshow_nav a.next{
+    color: blue;
+    margin-left: 400px;
+  
+}
+div.slideshow_indicator{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+div.slideshow_indicator a{
+    font-size: 24px;
+    color: white;
+    padding: 7px;
+    display: inline-block;
+    
+}
+div.slideshow_indicator a.active{
+    color: orangered;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+main aside{
+   margin-right: 50px;
+}

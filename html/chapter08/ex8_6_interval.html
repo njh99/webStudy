@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onLoad(){
+        const btn = document.querySelector("#stop");
+        const btnStart = document.querySelector("#start");
+        const h1obj = document.querySelector("h1");
+
+        btn.addEventListener("click",()=>{
+            clearInterval(intervalID);
+        })
+        btnStart.addEventListener("click",()=>{
+            setInterva(letterRotate,1000);
+        })
+
+       function letterRotate(){
+            let data = h1obj.textContent;
+            let firstchar = data[0];
+            let text = data.slice(1)+firstchar;
+            h1obj.textContent = text;
+        }
+       const intervalID = setInterval(letterRotate,1000);
+        //letterRotate();
+    }
+    </script>
+</head>
+<body onload="onLoad();">
+    <h1>programming</h1>
+    <button type="button" id="stop">정지</button>
+    <button type="button" id="start">시작</button>
+
+   
+</body>
+</html>
