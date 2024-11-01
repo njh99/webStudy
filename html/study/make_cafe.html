@@ -9,11 +9,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./make.css">
-    <script src="https://kit.fontawesome.com/6498553759.js" async crossorigin="anonymous"></script>
     <script src="./index.js"></script>
+    <script src="https://kit.fontawesome.com/6498553759.js" async crossorigin="anonymous"></script>
+
    
 </head>
-<body onload="carousel();">
+<body onload="carousel(),onLoad();" >
     <header>
         <nav>
             <div class="nav_futlogo">
@@ -88,31 +89,52 @@
         <nav>
             <h1>NAV</h1>
         </nav>
-        <section>
-            <form action="#" method="post">
-                <label for="userid">아이디</label><br>
-                <input type="text" name="userid" id="userid"><br>
-                <label for="pwd">비밀번호</label><br>
-                <input type="password" name="pwd" id="pwd"><br>
-                <label for="pwd1">비밀번호 재확인</label><br>
-                <input type="password" name="pwd1" id="pwd1"><br>
-                <label for="name">이름</label><br>
-                <input type="text" name="name" id="name"><br>
-                <label for="birthday">생년월일</label><br>
-                <input type="date" name="birthday" id="birthday"><br>
-                <label for="sex">성별</label><br>
-                <select name="sex" id="sex">
-                    <option value="0">성별</option>
-                    <option value="1">남성</option>
-                    <option value="2">여성</option>
-                </select><br>
-                <label for="email">이메일</label><br>
-                <input type="email" name="email" id="email"><br>
-                <label for="phone">휴대전화</label><br>
-                <input type="number" name="phone" id="phone"><br>
-                <button type="button">가입하기</button>
-                
-            </form>
+        <section >
+            <form action="#" method="post" class="myform">
+            <table>
+                <tr>
+                    <td class="id">아이디</td>
+                    <td><input type="text" name="userid" id="userid" value="" class="id"><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">비밀번호</td>
+                    <td><input type="password" name="pwd" id="pwd" value=""><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">비밀번호 재확인</td>
+                    <td><input type="password" name="pwd1" id="pwd1" value=""><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">이름</td>
+                    <td><input type="text" name="username" id="username" value=""><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">생년월일</td>
+                    <td><input type="date" name="userbirthday" id="userbirthday" value=""><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">성별</td>
+                    <td>
+                        <select name="sex" id="sex">
+                            <option value="0">성별</option>
+                            <option value="1">남성</option>
+                            <option value="2">여성</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="">이메일</td>
+                    <td> <input type="email" name="useremail" id="useremail" value=""><span></span></td>
+                </tr>
+                <tr>
+                    <td class="">휴대전화</td>
+                    <td><input type="tel" name="userphone" id="userphone" value=""><span></span></td>
+                </tr>
+            </table>
+            <div>
+               <input type="submit" value="가입" class="submit">
+            </div>
+        </form>
         </section>
         <aside>
           <h1>ASIDE</h1>
