@@ -212,7 +212,10 @@ input{
     font-size: x-large;
     display: inline-block;
     width: 80%;
-    height: 50px;
+    height: 40px;
+}
+input.submit{
+    width: 100%;
 }
 button{
     font-size: x-large;

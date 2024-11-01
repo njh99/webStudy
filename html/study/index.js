@@ -120,14 +120,14 @@ function onLoad(){
     const mobilePattern = /^010-(?:\d{3}|\d{4})-\d{4}$/;
     const datePattern = /^\d{4}-\d{2}-\d{2}$/; 
     //객체찾기
-    const id = document.querySelector("#userid");
-    const inputuserid = document.querySelector(".id");
+    
+    const inputuserid = document.querySelector("#userid");
     const inputpwd1 = document.querySelector("#pwd");
-    const inputpwd2 = document.querySelector("#pwd2");
-    const inputname = document.querySelector("#name");
-    const emialinputname = document.querySelector("#email");
-    const inputmobile = document.querySelector("#phone");
-    const inputdate = document.querySelector("#birthday");
+    const inputpwd2 = document.querySelector("#pwd1");
+    const inputname = document.querySelector("#username");
+    const emialinputname = document.querySelector("#useremail");
+    const inputmobile = document.querySelector("#userphone");
+    const inputdate = document.querySelector("#userbirthday");
     //폼객체
     const myform = document.querySelector(".myform");
 
@@ -154,26 +154,24 @@ function onLoad(){
 
 
      //폼 이벤트 등록 및 핸들러 처리
-     myform.addEventListener("submit",(e)=>{
+     myform.addEventListener(".submit",(e)=>{
         e.preventDefault();//서버에 전송하는 기본기능을 막는다.
         validate(inputid, idPattern,"영문자, 숫자, _만 입력 가능.");
         validate(inputpwd1, pwdPattern,"영문자 숫자 _까지 6~10 가능.");
         validate(inputpwd2, pwdPattern,"영문자 숫자 _까지 6~10 가능.")
-        if(inputpwd1.value !== inputpw2.value){
+        if(inputpwd1.value !== inputpwd2.value){
             inputpwd2.nextSibling.textContent ="패스워드가 일치하지 않습니다"
             inputpwd2.nextSibling.style.color = "red";
             inputpwd1.value="";
             inputpwd2.value="";
             inputpwd1.focus();
             return;
-        };
-        validate(inputname, namePattern,"한글 2글자~4글자,영문자 2글지~20글자 첫글자는 대문자 공백가능.");
-        validate(emialinputname, emialPattern,"이메일 양식에 맞지 않음");
-        validate(inputmobile, mobilePattern,"전화형식에 맞지 않음");
-        validate(inputdate, datePattern,"날짜 선택하세요");
-        alert("서버로 전송하겠습니다.");
-        myform.submit();
-        
+        }else{
+
+            alert("가입 성공했습니다.");
+            myform.submit();
+            
+        }
     });
 
      //핸들러 처리기능
