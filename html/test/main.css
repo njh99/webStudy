@@ -1,0 +1,188 @@
+*{
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+header>nav{
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+    }
+    header>nav a{
+    text-decoration: none;
+    color: rgb(14, 120, 206);
+    }
+    nav div{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px
+    }
+    nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    }
+    nav > ul li{
+        list-style: none;
+    }
+    .dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(219, 255, 255);
+    min-width: 150px;
+    z-index: 1;   
+
+}
+img{
+    width: 100%;
+    height: 80%;
+}
+header section{
+   
+}
+div.dropdown-content a{
+    display: block;
+    padding: 14px 16px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+div.slideshow{
+    background-color: white;
+    height: 465px;
+    min-width: 960px;
+    position: relative;
+   
+    
+}
+div.slideshow_slides{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+div.slideshow_slides a{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+div.slideshow_nav a{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    color: white;
+    font-size: 62px;
+    transform: translateY(-50%);
+    opacity: 50%;
+}
+div.slideshow_nav a.prev{
+   
+    color: blue;
+    margin-left: -462px;
+    
+}
+div.slideshow_nav a.next{
+    color: blue;
+    margin-left: 400px;
+  
+}
+div.slideshow_indicator{
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+div.slideshow_indicator a{
+    font-size: 24px;
+    color: white;
+    padding: 7px;
+    display: inline-block;
+    
+}
+div.slideshow_indicator a.active{
+    color: orangered;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+main aside{
+   margin-right: 50px;
+}
+p.p1{
+    color: rgb(114, 199, 255);
+}
+aside ul{
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(206, 255, 239);
+}
+aside ul li{
+    padding-top: 3px;
+}
+section{
+    width: 100%;
+    height: 500px;
+   
+}
+section nav.sect_nav1{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section nav.sect_nav1 ul{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+}
+section nav.sect_nav1 ul li{
+    list-style: none;
+    padding-right: 5px;
+}
+section nav.sect_nav3{
+display: flex;
+justify-content: space-between;
+border-bottom: 2px solid rgb(162, 194, 255);
+padding-bottom: 5px;
+}
+section div.table table{
+
+    width: 100%;
+    margin: 0 auto;
+    border: 3px double rgb(162, 194, 255);
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+tr td{
+    padding: 30px;
+}
+tr{
+    border: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+}

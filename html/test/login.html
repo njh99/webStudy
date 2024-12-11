@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://kit.fontawesome.com/6498553759.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Kablammo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./make login.css">
+    <script src="./login.js"></script>
+    <script src="https://kit.fontawesome.com/6498553759.js" async crossorigin="anonymous"></script>
+
+   
+</head>
+<body onload="onLoad();" >
+    <header>
+        <nav>
+            <div class="nav_futlogo">
+                <a href="#"><i class="fa-solid fa-futbol"></i></a>
+                <a href="#">메인메뉴</a>
+            </div>
+    
+            
+    
+            <ul class="nav_icon">
+                <li><a href="#"><i class="fa-regular fa-comment"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-question"></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+       
+    </header>
+    <main class="mainbody">
+        <nav>
+            <h1></h1>
+        </nav>
+        <section >
+            <form method="post" action="/jspStudy/memberInsert">
+                <table align="center" width="500" border="1">
+                    <tr>
+                        <td>아이디</td>
+                        <td><input type="text" name="id" id="id"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호</td>
+                        <td><input type="password" name="pw" id="pw"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td>비밀번호확인</td>
+                        <td><input type="password" name="pwd" id="pwd"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td>이름</td>
+                        <td><input type="text" name="name" id="name"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td>생년월일</td>
+                        <td><input type="date" name="birthday" id="birthday"><span></span></td>
+                    </tr>
+                    <tr>
+                        <td>이메일</td>
+                        <td><input type="email" name="mail" id="mail"><span></span></td>
+                    </tr>
+                    <tr class="button">
+                        <td  colspan="2" align="center"><input type="submit" value="가입">&nbsp;&nbsp;
+                            <input type="reset" value="취소"></td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+        <aside>
+          <h1></h1>
+        </aside>
+    </main>
+    <footer>
+        <h1></h1>
+    </footer>
+</body>
+</html>

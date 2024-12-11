@@ -1,0 +1,187 @@
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Jua", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+header>nav{
+    height: 150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 32px;
+}
+div.nav_futlogo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div.nav_futlogo i{
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin: 5px;
+}
+div.nav_futlogo a:hover{
+    color: blue;
+}
+ul.nav_menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+ul.nav_menu li{
+    padding: 10px 40px;
+    
+}
+ul.nav_menu li a i{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+ul.nav_menu li a:hover{
+    color: blue;
+}
+ul.nav_icon{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+ul.nav_icon a{
+    font-size: 24px;
+    padding: 10px;
+    
+}
+ul.nav_icon a:hover{
+    color: blue;
+}
+i{
+    font-size: 35px;
+    
+}
+.dropdown{
+    position: relative;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 150px;
+    z-index: 1;   
+
+}
+
+
+div.dropdown-content a{
+    display: block;
+    padding: 14px 16px;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+main.mainbody{
+    
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+main.mainbody nav, aside{
+  
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.mainbody section{
+    
+    width: 50%;
+    height: 500px;
+   
+}
+.mainbody section form{
+    font-size: x-large;
+    height: 500px;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+table{
+width: 100%;
+height: 100%;
+
+}
+table td{
+
+padding-top: 7px;
+}
+input{
+    
+    font-size: x-large;
+    display: inline-block;
+    width: 80%;
+    height: 40px;
+}
+input.submit{
+    width: 100%;
+}
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    font-size: x-large;
+}
+select{
+    font-size: x-large;
+}
+footer{
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+}
